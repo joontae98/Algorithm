@@ -5,22 +5,22 @@ import java.util.Arrays;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        int k;
+        int swap;
         int data[] = new int[10];
         Scanner sc = new Scanner(System.in);
 
-        for (int m = 0; m < data.length; m++) {
-            System.out.printf("Enter the number " + (m + 1) + ": ");
-            data[m] = sc.nextInt();
+        for (int n = 0; n < data.length; n++) {
+            System.out.printf("Enter the number " + (n + 1) + ": ");
+            data[n] = sc.nextInt();
         }
         System.out.println("Before sort: "+Arrays.toString(data));
 
         for (int i = 0; i < data.length; i++) {
-            for (int j = i; j < data.length; j++) {
+            for (int j = i + 1; j < data.length; j++) {
                 if (data[i] > data[j]) {
-                    k = data[i];
+                    swap = data[i];
                     data[i] = data[j];
-                    data[j] = k;
+                    data[j] = swap;
                 }
             }
         }// i 회전
