@@ -1,2 +1,2 @@
 # Algorithm
-Algorith code Repository
+**Algorithm** code Repository
